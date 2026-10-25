@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+  <h2>Conversation Orchestrator Demo</h2>
+  <p>Two LLM agents discuss whether lemons taste good.</p>
+
+  <div id="init">
+    <h3>エンジン１</h3>
+    <select id="model1"></select>
+    <div id="init1"></div>
+    <h3>エンジン２</h3>
+    <select id="model2"></select>
+    <div id="init2"></div>
+  </div>
+
+  <div id="chat">
+    <button id="start">チャット開始</button>
+    <h3>エージェント１</h3>
+    <div id="chat1"></div>
+    <h3>エージェント２</h3>
+    <div id="chat2"></div>
+    <button id="end">チャット終了</button>
+  </div>
+
+  <script type="module" src="./index.ts"></script>
+</body>
+
+</html>
